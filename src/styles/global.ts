@@ -4,6 +4,7 @@ export const globalStyles = globalCss({
   "*": {
     margin: 0,
     parddin: 0,
+    boxSizing: "border-box",
   },
 
   body: {
@@ -15,5 +16,9 @@ export const globalStyles = globalCss({
   "body, input, textarea, p, button": {
     fontFamily: "Readex Pro",
     fontWeight: 400,
+  },
+
+  html: {
+    fontSize: "62.5%",
   },
 });
