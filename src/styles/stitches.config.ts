@@ -41,6 +41,9 @@ export const {
       red_200: "#FFE0E8",
       red_100: "#FFEFF3",
 
+      line_grid: "#2A2933",
+
+      blur: "#165AFF",
       white: "#FFFFFF",
       bg: "#060606",
       gray_900: "#292929",

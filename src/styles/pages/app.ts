@@ -1,9 +1,9 @@
 import { styled } from "../stitches.config";
 
 export const Container = styled("div", {
-  minHeight: "200vh",
   display: "flex",
   flexDirection: "column",
+  padding: "0 11.2rem",
 });
 
 export const Header = styled("header", {
