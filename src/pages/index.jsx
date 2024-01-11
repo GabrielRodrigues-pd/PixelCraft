@@ -1,7 +1,7 @@
 import { styled } from "../styles/stitches.config";
 
 const Button = styled("button", {
-  backgroundColor: "$Blue700",
+  backgroundColor: "$blue_700",
   color: "#ECF8FF",
   border: "none",
   width: 262,
@@ -10,10 +10,19 @@ const Button = styled("button", {
   fontSize: 14,
   cursor: "pointer",
   "&:hover": {
-    backgroundColor: "Blue",
+    backgroundColor: "$blue_600",
   },
 });
 
 export default function Page() {
-  return <Button>Hello, Next.js!</Button>;
+  return (
+    <>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam, porro
+        incidunt deleniti expedita earum ut quaerat quam? Fugit fugiat expedita
+        itaque, inventore, fuga harum magni consequatur aperiam eos id debitis?
+      </p>
+      <Button>Hello, Next.js!</Button>
+    </>
+  );
 }
