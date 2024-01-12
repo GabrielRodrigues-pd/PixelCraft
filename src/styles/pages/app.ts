@@ -5,4 +5,5 @@ export const Container = styled("div", {
   flexDirection: "column",
   padding: "0 11.2rem",
   height: "100vh",
+  margin: "0 auto",
 });
