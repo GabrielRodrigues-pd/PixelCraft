@@ -17,7 +17,7 @@ export const Blur = styled("div", {
   position: "absolute",
   width: "362px",
   height: "362px",
-  zIndex: "299",
+  zIndex: "-2",
   top: "50%",
   left: "-10%",
   filter: "blur(271.5px)",
@@ -32,9 +32,3 @@ export const Blur = styled("div", {
     },
   },
 });
-
-export const InfoHeader = styled("div", {});
-
-export const Info = styled("div", {});
-
-export const Nunbers = styled("div", {});
