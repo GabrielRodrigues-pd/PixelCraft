@@ -6,7 +6,7 @@ export const LineGrid = styled("div", {
   left: "0px",
   padding: "0 11.2rem",
   width: "100%",
-  height: "100vh",
+  height: "100%",
   display: "flex",
   justifyContent: "space-between",
   zIndex: "-1",

@@ -1,5 +1,11 @@
 import { styled } from "../../styles/stitches.config";
 
+export const Container = styled("header", {
+  paddingTop: "3.6rem",
+  display: "flex",
+  width: "100%",
+});
+
 export const Nav = styled("nav", {
   display: "flex",
   alignItems: "center",
