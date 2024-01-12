@@ -65,7 +65,7 @@ export const Card = styled("div", {
     color: "$gray_300",
     fontFamily: "$Readex",
     lineHeight: "150%",
-    padding: "1.6rem 4.8rem 8rem 0",
+    padding: "1.6rem 0 8rem 0",
   },
 
   "& span": {
@@ -73,6 +73,9 @@ export const Card = styled("div", {
   },
 });
 export const Footer = styled("footer", {
+  display: "flex",
+  justifyContent: "space-between",
+
   "& span": {
     border: "2px solid $blue_Dark_500",
     borderRadius: "5rem",

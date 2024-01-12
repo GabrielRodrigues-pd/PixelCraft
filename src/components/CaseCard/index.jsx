@@ -21,8 +21,10 @@ export default function CaseCard({ image, title, description }) {
         <h2>{title}</h2>
         <p>{description}</p>
         <Footer>
-          <span>Ui design</span>
-          <span>Desenvolvimento</span>
+          <div>
+            <span>Ui design</span>
+            <span>Desenvolvimento</span>
+          </div>
           <button>Ver Case</button>
         </Footer>
       </Card>
