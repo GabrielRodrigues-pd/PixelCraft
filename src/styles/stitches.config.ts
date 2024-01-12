@@ -12,12 +12,14 @@ export const {
 } = createStitches({
   theme: {
     colors: {
+      blur: "#165AFF",
+      bg: "#060606",
+
       blue_800_Primary: "#004BE0",
       blue_950: "#0A2761",
       blue_900: "#083EA0",
       blue_700: "#0056FF",
       blue_600: "#006EFF",
-
       blue_200: "#B2E2FF",
       blue_100: "#D4EDFF",
       blue_50: "#ECF8FF",
@@ -34,6 +36,10 @@ export const {
       blue_Dark_100: "#EAEBF4",
       blue_Dark_50: "#F5F6FA",
 
+      card_Case: "#0A0B11",
+
+      line_grid: "#2A2933",
+
       red_primary_600: "#FF0065",
       red_600: "#D70055",
       red_500: "#FF2473",
@@ -41,15 +47,17 @@ export const {
       red_200: "#FFE0E8",
       red_100: "#FFEFF3",
 
-      line_grid: "#2A2933",
-
-      blur: "#165AFF",
-      white: "#FFFFFF",
-      bg: "#060606",
       gray_900: "#292929",
       gray_300: "#BDBDBD",
       gray_200: "#DCDCDC",
       gray_100: "#EFEFEF",
+
+      white: "#FFFFFF",
+    },
+
+    fonts: {
+      Space: "Space Grotesk",
+      Readex: "Readex Pro",
     },
   },
 });

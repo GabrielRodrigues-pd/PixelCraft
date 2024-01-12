@@ -6,7 +6,15 @@ export default function CaseCard({ image, title, description }) {
   return (
     <Container>
       <BoxImg>
-        <Image src={image} alt="" />
+        <Image
+          src={image}
+          width={554}
+          height={398}
+          style={{
+            objectFit: "cover",
+          }}
+          alt=""
+        />
       </BoxImg>
 
       <Card>
