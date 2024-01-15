@@ -1,9 +1,14 @@
 import { styled } from "../stitches.config";
 
 export const Container = styled("div", {
+  maxWidth: "122.1rem",
+
   display: "flex",
   flexDirection: "column",
-  padding: "0 11.2rem",
+  padding: "0 2rem",
+  boxSizing: "content-box",
+  margin: "0 auto",
+
   height: "100vh",
 });
 

@@ -4,7 +4,6 @@ export const Container = styled("section", {
   display: "flex",
   flexDirection: "column",
   width: "100%",
-  gap: "7.4rem",
   height: "100%",
 
   "& h2": {
@@ -22,6 +21,7 @@ export const BoxCard = styled("div", {
   justifyContent: "space-between",
   gap: "2rem",
   flexWrap: "wrap",
+  padding: "4rem 0 8rem 0",
 });
 
 export const Card = styled("div", {
@@ -58,4 +58,10 @@ export const Card = styled("div", {
     fontSize: "1.6rem",
     maxWidth: "334px",
   },
+});
+
+export const Technology = styled("div", {
+  display: "flex",
+  justifyContent: "center",
+  gap: "3.5rem",
 });
