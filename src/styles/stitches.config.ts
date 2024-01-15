@@ -35,7 +35,6 @@ export const {
       blue_Dark_200: "#D1D5E6",
       blue_Dark_100: "#EAEBF4",
       blue_Dark_50: "#F5F6FA",
-
       card_Case: "#0A0B11",
 
       line_grid: "#2A2933",
@@ -51,6 +50,7 @@ export const {
       gray_300: "#BDBDBD",
       gray_200: "#DCDCDC",
       gray_100: "#EFEFEF",
+      gray_btn: "#28292F",
 
       white: "#FFFFFF",
     },

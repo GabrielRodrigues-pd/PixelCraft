@@ -1,6 +1,7 @@
 import React from "react";
 import { Footer, Container, BoxImg, Card } from "./styles";
 import Image from "next/image";
+import ButtonCase from "@/components/Buttons/ButtonCase";
 
 export default function CaseCard({ image, title, description }) {
   return (
@@ -14,18 +15,22 @@ export default function CaseCard({ image, title, description }) {
             objectFit: "cover",
           }}
           alt=""
+          quality={100}
         />
       </BoxImg>
 
       <Card>
-        <h2>{title}</h2>
-        <p>{description}</p>
+        <div>
+          <h2>{title}</h2>
+          <p>{description}</p>
+        </div>
+
         <Footer>
           <div>
             <span>Ui design</span>
             <span>Desenvolvimento</span>
           </div>
-          <button>Ver Case</button>
+          <ButtonCase title={"Ver Case"} />
         </Footer>
       </Card>
     </Container>

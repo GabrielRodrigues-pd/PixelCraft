@@ -2,6 +2,7 @@ import { Container, HeadCases, BodyCases } from "./style";
 
 import CaseCard from "@/components/CaseCard";
 import img1 from "@/assets/img-card.png";
+import CaseHeader from "@/components/Buttons/CaseHeader";
 
 export default function Cases() {
   const caseDatas = [
@@ -28,7 +29,7 @@ export default function Cases() {
           <h2>Conheça os Projetos que já Desenvolvemos</h2>
         </div>
         <p>Designers incríveis, modernos, clear e que realmente se destacam</p>
-        <button>Ver todos os Cases</button>
+        <CaseHeader title={"Ver todos os Cases"} />
       </HeadCases>
       <BodyCases>
         {caseDatas.map((caseData) => (

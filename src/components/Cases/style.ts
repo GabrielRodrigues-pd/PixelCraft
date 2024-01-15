@@ -3,7 +3,6 @@ import { styled } from "@/styles/stitches.config";
 export const Container = styled("section", {
   display: "flex",
   flexDirection: "column",
-  padding: "12.0rem 11.2rem",
   gap: "7.4rem",
   height: "100%",
 });

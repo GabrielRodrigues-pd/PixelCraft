@@ -4,7 +4,9 @@ import Hero from "@/components/Hero";
 import Header from "@/components/Header";
 import Carrossel from "@/components/Carrossel";
 import Cases from "@/components/Cases";
-import { Container } from "@/styles/pages/app";
+import Expertise from "../components/Expertise";
+
+import { Container, Main } from "@/styles/pages/app";
 
 export default function Page() {
   return (
@@ -13,9 +15,11 @@ export default function Page() {
         <Header />
         <Hero />
       </Container>
-
       <Carrossel />
-      <Cases></Cases>
+      <Main>
+        <Cases />
+        <Expertise />
+      </Main>
     </>
   );
 }
