@@ -5,7 +5,7 @@ export const Container = styled("section", {
   flexDirection: "column",
   padding: "12.0rem 11.2rem",
   gap: "7.4rem",
-  height: "100vh",
+  height: "100%",
 });
 
 export const HeadCases = styled("div", {

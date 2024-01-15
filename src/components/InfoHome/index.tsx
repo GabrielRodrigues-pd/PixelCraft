@@ -2,7 +2,7 @@ import React from "react";
 import { InfoHeader, Info, Nunbers, Ponto, Scroll } from "./styles";
 
 import Image from "next/image";
-import ButtonV2 from "../ButtonV2";
+import ButtonV2 from "../Buttons/ButtonV2";
 
 import foguete from "@/assets/foguete.svg";
 import mouser from "@/assets/mouser.svg";

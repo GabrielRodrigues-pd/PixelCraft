@@ -2,7 +2,7 @@ import Image from "next/image";
 import logo from "@/assets/logo.svg";
 
 import { Nav, Container } from "@/components/Header/styles";
-import Button from "../Button";
+import Button from "../Buttons/Button";
 
 export default function Header() {
   return (
