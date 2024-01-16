@@ -18,7 +18,6 @@ export const Main = styled("div", {
   display: "flex",
   flexDirection: "column",
   gap: "12rem",
-  alignItems: "center",
   padding: "0 2rem",
   boxSizing: "content-box",
 });

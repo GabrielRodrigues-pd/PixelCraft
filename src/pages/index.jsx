@@ -5,6 +5,7 @@ import Header from "@/components/Header";
 import Carrossel from "@/components/Carrossel";
 import Cases from "@/components/Cases";
 import Expertise from "../components/Expertise";
+import About from "../components/About";
 
 import { Container, Main } from "@/styles/pages/app";
 
@@ -19,6 +20,7 @@ export default function Page() {
       <Main>
         <Cases />
         <Expertise />
+        <About />
       </Main>
     </>
   );

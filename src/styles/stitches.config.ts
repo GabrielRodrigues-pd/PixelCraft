@@ -35,6 +35,8 @@ export const {
       blue_Dark_200: "#D1D5E6",
       blue_Dark_100: "#EAEBF4",
       blue_Dark_50: "#F5F6FA",
+      blue_P: "#40416E",
+
       card_Case: "#0A0B11",
 
       line_grid: "#2A2933",

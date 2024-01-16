@@ -14,7 +14,7 @@ export const Info = styled("div", {
 
     p: {
       fontSize: "1.4rem",
-      color: "$white",
+      color: "$blue_Dark_100",
     },
   },
 
@@ -54,7 +54,7 @@ export const Nunbers = styled("div", {
     width: "166px",
     fontSize: "1.4rem",
     textAlign: "right",
-    color: "$blue_50",
+    color: "$blue_Dark_100",
   },
 
   h3: {
