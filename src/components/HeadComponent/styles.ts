@@ -17,6 +17,8 @@ export const Head = styled("div", {
     color: "$white",
     fontSize: "3.2rem",
     fontFamily: "$Space",
+    maxWidth: "48rem",
+    textAlign: "center",
   },
   "& p": {
     color: "$blue_P",

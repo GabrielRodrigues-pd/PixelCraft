@@ -7,6 +7,7 @@ import Cases from "@/components/Cases";
 import Expertise from "../components/Expertise";
 import About from "../components/About";
 import Process from "../components/Process";
+import Rating from "../components/Rating";
 
 import { Container, Main } from "@/styles/pages/app";
 
@@ -23,6 +24,7 @@ export default function Page() {
         <Expertise />
         <About />
         <Process />
+        <Rating />
       </Main>
     </>
   );
