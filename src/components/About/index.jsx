@@ -2,9 +2,9 @@ import React from "react";
 import { Container, Head, Body } from "./styles";
 
 import CardDeveloper from "../CardDeveloper";
+import HeadComponent from "../HeadComponent";
 
-import Image from "next/image";
-import star from "../../assets/star.svg";
+// import Image from "next/image";
 
 import ImgD from "../../assets/IconDiogo.png";
 import ImgG from "../../assets/IconGabriel.png";
@@ -12,13 +12,10 @@ import ImgG from "../../assets/IconGabriel.png";
 export default function About() {
   return (
     <Container>
-      <Head>
-        <Image src={star} alt="" />
-        <p>juntos, buscamos inovação e excelência</p>
-        <h2>
-          Nós somos a PixelCraft<span>.</span>
-        </h2>
-      </Head>
+      <HeadComponent
+        title={"Nós somos a PixelCraft"}
+        subTitle={"juntos, buscamos inovação e excelência"}
+      />
       <Body>
         <CardDeveloper
           altImgDev={"Foto de Diogo Alvez, Sócio Fundador."}

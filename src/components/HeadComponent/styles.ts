@@ -1,13 +1,17 @@
 import { styled } from "@/styles/stitches.config";
 
-export const Container = styled("section", {
-  display: "flex",
-  flexDirection: "column",
-  gap: "8rem",
-});
-
 export const Head = styled("div", {
   margin: "0 auto",
+  display: "flex",
+  flexDirection: "column",
+  alignItems: "center",
+
+  "& div": {
+    display: "flex",
+    alignItems: "center",
+    gap: ".8rem",
+    paddingBottom: "1rem",
+  },
 
   "& h2": {
     color: "$white",
@@ -20,15 +24,9 @@ export const Head = styled("div", {
     fontFamily: "$Readex",
     textTransform: "uppercase",
     display: "inline-block",
-    paddingBottom: "8px",
-    paddingLeft: "8px",
   },
 
   "& span": {
     color: "$blue_700",
   },
-});
-
-export const Body = styled("div", {
-  width: "100%",
 });

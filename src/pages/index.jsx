@@ -6,6 +6,7 @@ import Carrossel from "@/components/Carrossel";
 import Cases from "@/components/Cases";
 import Expertise from "../components/Expertise";
 import About from "../components/About";
+import Process from "../components/Process";
 
 import { Container, Main } from "@/styles/pages/app";
 
@@ -21,6 +22,7 @@ export default function Page() {
         <Cases />
         <Expertise />
         <About />
+        <Process />
       </Main>
     </>
   );
