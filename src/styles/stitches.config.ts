@@ -47,6 +47,8 @@ export const {
       red_200: "#FFE0E8",
       red_100: "#FFEFF3",
 
+      gray_span: "#8F8F8F",
+
       gray_900: "#292929",
       gray_300: "#BDBDBD",
       gray_200: "#DCDCDC",
