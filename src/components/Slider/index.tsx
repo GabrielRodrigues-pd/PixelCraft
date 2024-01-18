@@ -9,7 +9,7 @@ export default function Slider() {
   return (
     <Container>
       <CardRating
-        title="Max Silva"
+        title="UI Design & WebSite"
         status="Clínica Odontológica"
         name="Max Silva"
         disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.” "
@@ -21,10 +21,10 @@ export default function Slider() {
         />
       </CardRating>
       <CardRating
-        title="Max Silva"
+        title="UI Design App e Site"
         status="Clínica Odontológica"
-        name="Max Silva"
-        disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.” "
+        name="John Robe"
+        disc="“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes. Recomendo sem hesitação, excelente trabalho!” "
       >
         <Image
           src={Icon1}
@@ -33,9 +33,9 @@ export default function Slider() {
         />
       </CardRating>
       <CardRating
-        title="Max Silva"
+        title="Loja virtual"
         status="Clínica Odontológica"
-        name="Max Silva"
+        name="Elena Lopes"
         disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.” "
       >
         <Image

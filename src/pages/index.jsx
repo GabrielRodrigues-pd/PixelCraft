@@ -8,6 +8,7 @@ import Expertise from "../components/Expertise";
 import About from "../components/About";
 import Process from "../components/Process";
 import Rating from "../components/Rating";
+import Footer from "../components/Footer";
 
 import { Container, Main } from "@/styles/pages/app";
 
@@ -25,6 +26,7 @@ export default function Page() {
         <About />
         <Process />
         <Rating />
+        <Footer />
       </Main>
     </>
   );

@@ -14,7 +14,7 @@ export const Container = styled("div", {
 
 export const Main = styled("div", {
   maxWidth: "122.1rem",
-  margin: "12rem auto 12rem auto",
+  margin: "12rem auto 4.5rem auto",
   display: "flex",
   flexDirection: "column",
   gap: "12rem",

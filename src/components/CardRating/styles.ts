@@ -11,9 +11,21 @@ export const cardStyles = css({
   flexDirection: "column",
   justifyContent: "space-between",
   cursor: "pointer",
+  transition: ".2s",
 
   "&:hover": {
     backgroundColor: "white",
+
+    "& h2": {
+      color: "$blue_700",
+    },
+
+    "& p": {
+      color: "$line_grid",
+    },
+    "& h3": {
+      color: "$line_grid",
+    },
   },
 
   "& h2": {
@@ -27,7 +39,7 @@ export const cardStyles = css({
   "& p": {
     color: "$gray_300",
     fontFamily: "$Readex",
-    fontSize: "2.2rem",
+    fontSize: "2rem",
     fontStyle: "normal",
     fontWeight: 400,
     lineHeight: "150%" /* 33px */,
