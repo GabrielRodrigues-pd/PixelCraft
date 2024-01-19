@@ -1,10 +1,27 @@
-import { styled } from "@/styles/stitches.config";
+import { styled, css } from "@/styles/stitches.config";
 
-export const Container = styled("section", {
+export const Container = styled("div", {
   display: "flex",
+  maxWidth: "122.1rem",
+  margin: "6rem auto 0 auto",
+
   justifyContent: "space-between",
   alignItems: "center",
   height: "60vh",
+});
+
+export const BoxBg = styled("div", {
+  width: "70vw",
+  height: "100%",
+  position: "absolute",
+  top: "0",
+  right: "-20%",
+  padding: "0",
+  zIndex: "-1",
+});
+
+export const imgStyle = css({
+  opacity: "0.1",
 });
 
 export const Flame = styled("div", {

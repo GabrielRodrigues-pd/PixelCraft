@@ -6,6 +6,9 @@ export const Container = styled("footer", {
   justifyContent: "space-between",
   paddingTop: "4rem",
   alignItems: "center",
+  maxWidth: "122.1rem",
+  margin: "0 auto",
+  paddingBottom: "4rem",
 
   "& p": {
     color: "$gray_span",

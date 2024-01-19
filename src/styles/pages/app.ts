@@ -8,11 +8,10 @@ export const Container = styled("div", {
   padding: "0 2rem",
   boxSizing: "content-box",
   margin: "0 auto",
-
   height: "100vh",
 });
 
-export const Main = styled("div", {
+export const Main = styled("main", {
   maxWidth: "122.1rem",
   margin: "12rem auto 4.5rem auto",
   display: "flex",
@@ -20,4 +19,8 @@ export const Main = styled("div", {
   gap: "12rem",
   padding: "0 2rem",
   boxSizing: "content-box",
+});
+
+export const Section = styled("section", {
+  position: "relative",
 });
