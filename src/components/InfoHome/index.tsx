@@ -25,7 +25,7 @@ export default function InfoHome() {
           Potencializamos o sucesso online dos nossos clientes por meio de uma
           combinação única de criatividade e expertise.
         </p>
-        <ButtonV2 />
+        <ButtonV2 title="Iniciar um projeto" altDisc="Botão iniciar projeto" />
       </Info>
       <Nunbers>
         <p>Nossos números</p>

@@ -2,10 +2,15 @@ import { Button } from "./styles";
 import Image from "next/image";
 import seta from "@/assets/seta.svg";
 
-export default function ButtonV2() {
+interface ButtonProps {
+  title: string;
+  altDisc: string;
+}
+
+export default function ButtonV2({ title, altDisc }: ButtonProps) {
   return (
     <Button>
-      Iniciar um projeto <Image src={seta} alt="" />
+      {title} <Image src={seta} alt={altDisc} />
     </Button>
   );
 }
