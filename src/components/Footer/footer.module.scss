@@ -1,0 +1,52 @@
+@import "../../styles/var.module.scss";
+
+.container {
+  border-top: 1px solid $gray_btn;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 122.1rem;
+  margin: 0 auto;
+  padding: 4rem 0;
+  flex-wrap: wrap;
+  gap: 2rem;
+
+  @media (max-width: 1290px) {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+
+  a {
+    color: $gray_span;
+    font-family: $SpaceGro;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  span {
+    color: $gray_span;
+    font-family: $SpaceGro;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  div {
+    display: flex;
+    gap: 2.1rem;
+    cursor: pointer;
+  }
+
+  button {
+    cursor: pointer;
+    color: $gray_span;
+    background-color: transparent;
+    border: 0;
+    font-family: $ReadexPro;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+}

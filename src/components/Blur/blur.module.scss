@@ -1,0 +1,23 @@
+@import "../../styles/var.module.scss";
+
+.blur {
+  position: absolute;
+  width: 36.2rem;
+  height: 36.2rem;
+  z-index: -2;
+  top: 5%;
+  left: -15%;
+  filter: blur(271.5px);
+  background-color: $blue_900;
+}
+
+.rh {
+  position: absolute;
+  width: 36.2rem;
+  height: 36.2rem;
+  z-index: -2;
+  top: 5%;
+  right: -15%;
+  filter: blur(271.5px);
+  background-color: $blue_900;
+}

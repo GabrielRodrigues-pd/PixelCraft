@@ -1,0 +1,37 @@
+@import "./var.module.scss";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 1s;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  -webkit-font-smoothing: antialiased;
+  background-color: $bg;
+  color: $white;
+  overflow-x: hidden;
+}
+
+li,
+a {
+  list-style: none;
+  text-decoration: none;
+}
+
+button {
+  cursor: pointer;
+}
+
+input,
+textarea,
+p,
+button {
+  font-family: $ReadexPro;
+  font-weight: 400;
+}

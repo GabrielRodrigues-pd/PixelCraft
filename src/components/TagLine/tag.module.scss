@@ -1,0 +1,21 @@
+@import "../../styles/var.module.scss";
+
+.container {
+  border: 2px solid $gray_btn;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+  border-radius: 5rem;
+  width: 28rem;
+  padding: 7px 1rem;
+  box-sizing: content-box;
+  color: $blue_Dark_500;
+  text-align: center;
+  font-family: $ReadexPro;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  text-transform: uppercase;
+}

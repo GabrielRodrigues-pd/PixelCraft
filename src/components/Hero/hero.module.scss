@@ -1,0 +1,141 @@
+@import "../../styles/var.module.scss";
+
+.hero {
+  display: flex;
+  justify-content: space-between;
+  margin: 12rem auto 25rem auto;
+  max-width: 122.1rem;
+  padding: 0 2rem;
+  box-sizing: content-box;
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}
+
+.disc {
+  color: $blue_Dark_100;
+  font-family: $ReadexPro;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  max-width: 52rem;
+  margin: 2.4rem 0 4.8rem 0;
+}
+
+.ponto {
+  color: $blue_700;
+}
+
+.subtitle {
+  color: $gray_300;
+  font-family: $ReadexPro;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  gap: 1.6rem;
+}
+
+.number {
+  display: flex;
+  flex-direction: column;
+  gap: 4.2rem;
+
+  @media (max-width: 900px) {
+    padding-top: 15rem;
+    align-items: center;
+  }
+
+  h3 {
+    color: $white;
+    font-family: $ReadexPro;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
+
+  span {
+    color: $blue_700;
+  }
+}
+
+.info {
+  h1 {
+    color: $white;
+
+    font-family: $ReadexPro;
+    font-size: 7.2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 3.6px;
+    text-transform: uppercase;
+
+    @media (max-width: 700px) {
+      font-size: 5.2rem;
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+  }
+}
+
+.boxInfo {
+  width: 16.3rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+
+  @media (max-width: 900px) {
+    align-items: center;
+  }
+}
+
+.title {
+  color: $gray_300;
+  font-family: $ReadexPro;
+  text-align: end;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.parag {
+  color: $gray_300;
+  font-family: $ReadexPro;
+  text-align: end;
+  font-size: 1.4rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+
+  @media (max-width: 900px) {
+    text-align: center;
+  }
+}
+
+.scroll {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 0.8rem;
+
+  color: $white;
+  text-align: center;
+  font-family: $ReadexPro;
+  font-size: 1.2rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}

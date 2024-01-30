@@ -1,0 +1,20 @@
+@import "../../styles/var.module.scss";
+
+.container {
+  width: 100%;
+  background-color: $white;
+  display: flex;
+  height: 6.4rem;
+  align-content: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+
+  p {
+    font-size: 1.6rem;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    color: $bg;
+    font-family: $SpaceGro;
+  }
+}

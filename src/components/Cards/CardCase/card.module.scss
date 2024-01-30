@@ -1,0 +1,86 @@
+@import "../../../styles/var.module.scss";
+
+.container {
+  display: flex;
+  background-color: $card_Case;
+  border-radius: 2.4rem;
+  align-items: center;
+  overflow: auto;
+  width: 100%;
+
+  @media (max-width: 1050px) {
+    flex-direction: column;
+  }
+}
+
+.boxImg {
+  padding: 1rem;
+  width: 100%;
+  text-align: center;
+
+  @media (max-width: 900px) {
+    width: auto;
+    padding-top: 3rem;
+  }
+
+  img {
+    border-radius: 2.4rem;
+  }
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 8rem 5rem 5rem 5rem;
+}
+
+.infoCard {
+  h2 {
+    color: $white;
+    font-family: $SpaceGro;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+
+  p {
+    color: $gray_300;
+    font-family: $ReadexPro;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%; /* 21px */
+    padding: 1.6rem 0 8rem 0;
+  }
+}
+.footerCard {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+
+  div {
+    display: flex;
+    gap: 1.2rem;
+    flex-wrap: wrap;
+
+    span {
+      border-radius: 5rem;
+      border: 1px solid $gray_btn;
+
+      color: $blue_Dark_500;
+      font-family: $ReadexPro;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+      padding: 0.7rem 2.1rem;
+    }
+  }
+}

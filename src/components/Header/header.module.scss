@@ -1,0 +1,32 @@
+@import "../../styles/var.module.scss";
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 122.1rem;
+  padding: 0 2rem;
+  box-sizing: content-box;
+  margin: 3.6rem auto auto auto;
+}
+
+.nav {
+  @media (max-width: 770px) {
+    display: none;
+  }
+}
+
+.ul {
+  display: flex;
+  gap: 7.2rem;
+
+  li a {
+    color: $white;
+    font-family: $SpaceGro;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+  }
+}

@@ -1,0 +1,89 @@
+@import "../../../styles/var.module.scss";
+
+.container {
+  max-width: 37.5rem;
+  padding: 6rem 3.5rem;
+  border-radius: 2.4rem;
+  margin-bottom: 2rem;
+  border: 2px solid $gray_btn;
+  height: 44.7rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  cursor: pointer;
+  transition: 0.2s;
+
+  &:hover {
+    background-color: $white;
+
+    h2 {
+      color: $blue_700;
+    }
+
+    p {
+      color: $line_grid;
+    }
+
+    h3 {
+      color: $line_grid;
+    }
+  }
+
+  h2 {
+    color: $white;
+    font-family: $SpaceGro;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+  }
+
+  p {
+    color: $gray_300;
+    font-family: $ReadexPro;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    padding-top: 1.6rem;
+  }
+}
+
+.innerImg {
+  display: flex;
+  gap: 1.6rem;
+  align-items: center;
+
+  h3 {
+    color: $white;
+    font-family: $ReadexPro;
+    font-size: 2.2rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+  }
+
+  span {
+    color: $gray_span;
+    font-family: $ReadexPro;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+  }
+}
+
+.info {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper {
+  width: 6rem;
+  height: 6rem;
+  border-radius: 50%;
+
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}

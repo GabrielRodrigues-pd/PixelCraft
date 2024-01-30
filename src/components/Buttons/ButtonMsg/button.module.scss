@@ -1,0 +1,22 @@
+@import "../../../styles/var.module.scss";
+
+.btn {
+  display: inline-flex;
+  padding: 2rem 9.1rem;
+  justify-content: center;
+  align-items: center;
+  gap: 1.6rem;
+  border-radius: 0.6rem;
+  background-color: transparent;
+  border: 1px solid $blue_Dark_50;
+  cursor: pointer;
+
+  color: $blue_50;
+  font-family: $ReadexPro;
+  font-size: 1.6rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+}
