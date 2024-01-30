@@ -12,10 +12,12 @@ export default function Contact() {
       <div className={styles.boxBg}>
         <Image
           src={ImgBg}
-          layout="fill"
-          objectFit="cover"
-          objectPosition="left"
-          alt=""
+          fill={true}
+          style={{
+            objectFit: "cover",
+            objectPosition: "left",
+          }}
+          alt="Imagem de fundo do contact"
           className={styles.imgStyle}
         />
       </div>

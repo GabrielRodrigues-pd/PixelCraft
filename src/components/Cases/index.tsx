@@ -21,7 +21,7 @@ export default function Cases() {
   ];
 
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="case">
       <div className={styles.header}>
         <div>
           <span>Our recent Cases</span>

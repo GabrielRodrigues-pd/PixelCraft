@@ -20,6 +20,17 @@
   display: flex;
   gap: 7.2rem;
 
+  li {
+    color: $white;
+    font-family: $SpaceGro;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    cursor: pointer;
+  }
+
   li a {
     color: $white;
     font-family: $SpaceGro;

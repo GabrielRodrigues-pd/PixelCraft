@@ -17,7 +17,9 @@ export default function CardCase({ title, description, image }: CardProps) {
           src={image}
           width={554}
           height={398}
-          objectFit="cover"
+          style={{
+            objectFit: "cover",
+          }}
           alt=""
           quality={100}
         />

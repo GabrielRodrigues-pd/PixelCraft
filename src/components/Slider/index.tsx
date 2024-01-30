@@ -1,48 +1,131 @@
+"use client";
+
 import React from "react";
+import { useState, useEffect } from "react";
 import styles from "./slider.module.scss";
 import CardRating from "../Cards/CardRating";
-import Image from "next/image";
+import Image, { StaticImageData } from "next/image";
 import Icon1 from "@/assets/png/imgIcon.png";
+import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+import "swiper/css";
 
 export default function Slider() {
+  const [slidePerView, setslidePerView] = useState(3);
+
+  useEffect(() => {
+    function handleResize() {
+      if (window.innerWidth < 1110) {
+        setslidePerView(2);
+      }
+      if (window.innerWidth < 800) {
+        setslidePerView(1);
+      }
+      if (window.innerWidth > 1110) {
+        setslidePerView(3);
+      }
+    }
+
+    handleResize();
+
+    window.addEventListener("resize", handleResize);
+
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <div className={styles.container}>
-      <CardRating
-        title="UI Design & WebSite"
-        status="Clínica Odontológica"
-        name="Max Silva"
-        disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.” "
+      <Swiper
+        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        spaceBetween={46}
+        slidesPerView={slidePerView}
+        navigation
+        pagination={{ clickable: true }}
+        scrollbar={{ draggable: true }}
+        onSwiper={(swiper) => console.log(swiper)}
+        onSlideChange={() => console.log("slide change")}
       >
-        <Image
-          src={Icon1}
-          style={{ objectFit: "cover", borderRadius: "50%", width: "100%" }}
-          alt=""
+        <SwiperSlide>
+          <CardRating
+            title="Card 0"
+            status="Clínica Odontológica"
+            name="Max Silva"
+            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+            imgSrc={Icon1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardRating
+            title="Card 1"
+            status="Clínica Odontológica"
+            name="Max Silva"
+            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+            imgSrc={Icon1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardRating
+            title="Card 2"
+            status="Clínica Odontológica"
+            name="Max Silva"
+            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+            imgSrc={Icon1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardRating
+            title="Card 3"
+            status="Clínica Odontológica"
+            name="Max Silva"
+            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+            imgSrc={Icon1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardRating
+            title="Card 3"
+            status="Clínica Odontológica"
+            name="Max Silva"
+            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+            imgSrc={Icon1}
+          />
+        </SwiperSlide>
+        <SwiperSlide>
+          <CardRating
+            title="Card 3"
+            status="Clínica Odontológica"
+            name="Max Silva"
+            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+            imgSrc={Icon1}
+          />
+        </SwiperSlide>
+        {/* <div className={`${styles.container}`}>
+        <CardRating
+          title="UI Design & WebSite"
+          status="Clínica Odontológica"
+          name="Max Silva"
+          disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+          imgSrc={Icon1}
         />
-      </CardRating>
-      <CardRating
-        title="UI Design App e Site"
-        status="Clínica Odontológica"
-        name="John Robe"
-        disc="“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes. Recomendo sem hesitação, excelente trabalho!” "
-      >
-        <Image
-          src={Icon1}
-          style={{ objectFit: "cover", borderRadius: "50%", width: "100%" }}
-          alt=""
+        <CardRating
+          title="UI Design & WebSite"
+          status="Clínica Odontológica"
+          name="Max Silva"
+          disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+          imgSrc={Icon1}
         />
-      </CardRating>
-      <CardRating
-        title="UI Design App e Site"
-        status="Clínica Odontológica"
-        name="John Robe"
-        disc="“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes. Recomendo sem hesitação, excelente trabalho!” "
-      >
-        <Image
-          src={Icon1}
-          style={{ objectFit: "cover", borderRadius: "50%", width: "100%" }}
-          alt=""
+        <CardRating
+          title="UI Design & WebSite"
+          status="Clínica Odontológica"
+          name="Max Silva"
+          disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
+          imgSrc={Icon1}
         />
-      </CardRating>
+      </div> */}
+      </Swiper>
     </div>
   );
 }
