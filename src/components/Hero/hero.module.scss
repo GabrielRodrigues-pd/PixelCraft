@@ -3,9 +3,9 @@
 .hero {
   display: flex;
   justify-content: space-between;
-  margin: 12rem auto 25rem auto;
+  margin: 0 auto;
   max-width: 122.1rem;
-  padding: 0 2rem;
+  padding: 12rem 2rem 25rem 0;
   box-sizing: content-box;
 
   @media (max-width: 900px) {

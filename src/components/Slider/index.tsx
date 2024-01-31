@@ -12,18 +12,18 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 
 export default function Slider() {
-  const [slidePerView, setslidePerView] = useState(3);
+  const [slidePerView, setSlidePerView] = useState(3);
 
   useEffect(() => {
     function handleResize() {
       if (window.innerWidth < 1110) {
-        setslidePerView(2);
+        setSlidePerView(2);
       }
       if (window.innerWidth < 800) {
-        setslidePerView(1);
+        setSlidePerView(1);
       }
       if (window.innerWidth > 1110) {
-        setslidePerView(3);
+        setSlidePerView(3);
       }
     }
 

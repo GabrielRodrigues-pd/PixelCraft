@@ -12,13 +12,17 @@ import Process from "@/components/Process/indes";
 import Rating from "@/components/Rating";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
+import BgHero from "@/components/BgHero";
 
 export default function Home() {
   return (
     <Container>
-      <Header />
+      <BgHero>
+        <Header />
+        <Hero />
+      </BgHero>
+
       <Blur />
-      <Hero />
       <Carrossel />
       <Main>
         <Cases />
