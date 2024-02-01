@@ -13,129 +13,129 @@
     align-items: center;
     text-align: center;
   }
-}
 
-.disc {
-  color: $blue_Dark_100;
-  font-family: $ReadexPro;
-  font-size: 2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  max-width: 52rem;
-  margin: 2.4rem 0 4.8rem 0;
-}
+  .info {
+    h1 {
+      color: $white;
 
-.ponto {
-  color: $blue_700;
-}
+      font-family: $ReadexPro;
+      font-size: 7.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      letter-spacing: 3.6px;
+      text-transform: uppercase;
 
-.subtitle {
-  color: $gray_300;
-  font-family: $ReadexPro;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-  display: flex;
-  gap: 1.6rem;
-}
+      @media (max-width: 700px) {
+        font-size: 5.2rem;
+      }
+    }
 
-.number {
-  display: flex;
-  flex-direction: column;
-  gap: 4.2rem;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      display: flex;
+      align-items: center;
+    }
 
-  @media (max-width: 900px) {
-    padding-top: 15rem;
-    align-items: center;
-  }
+    .subtitle {
+      color: $gray_300;
+      font-family: $ReadexPro;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      display: flex;
+      gap: 1.6rem;
+    }
 
-  h3 {
-    color: $white;
-    font-family: $ReadexPro;
-    font-size: 2.4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
+    .ponto {
+      color: $blue_700;
+    }
 
-  span {
-    color: $blue_700;
-  }
-}
-
-.info {
-  h1 {
-    color: $white;
-
-    font-family: $ReadexPro;
-    font-size: 7.2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 3.6px;
-    text-transform: uppercase;
-
-    @media (max-width: 700px) {
-      font-size: 5.2rem;
+    .disc {
+      color: $blue_Dark_100;
+      font-family: $ReadexPro;
+      font-size: 2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      max-width: 52rem;
+      margin: 2.4rem 0 4.8rem 0;
     }
   }
 
-  @media (max-width: 900px) {
-    flex-direction: column;
+  .number {
     display: flex;
-    align-items: center;
+    flex-direction: column;
+    gap: 4.2rem;
+
+    @media (max-width: 900px) {
+      padding-top: 15rem;
+      align-items: center;
+    }
+
+    h3 {
+      color: $white;
+      font-family: $ReadexPro;
+      font-size: 2.4rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    span {
+      color: $blue_700;
+    }
+
+    .title {
+      color: $gray_300;
+      font-family: $ReadexPro;
+      text-align: end;
+      font-size: 1.4rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
+
+    .boxInfo {
+      width: 16.3rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      gap: 0.8rem;
+
+      @media (max-width: 900px) {
+        align-items: center;
+      }
+
+      .parag {
+        color: $gray_300;
+        font-family: $ReadexPro;
+        text-align: end;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+        @media (max-width: 900px) {
+          text-align: center;
+        }
+      }
+    }
+
+    .scroll {
+      display: flex;
+      align-items: center;
+      justify-content: flex-end;
+      gap: 0.8rem;
+
+      color: $white;
+      text-align: center;
+      font-family: $ReadexPro;
+      font-size: 1.2rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+    }
   }
-}
-
-.boxInfo {
-  width: 16.3rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-  gap: 0.8rem;
-
-  @media (max-width: 900px) {
-    align-items: center;
-  }
-}
-
-.title {
-  color: $gray_300;
-  font-family: $ReadexPro;
-  text-align: end;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-
-.parag {
-  color: $gray_300;
-  font-family: $ReadexPro;
-  text-align: end;
-  font-size: 1.4rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-
-  @media (max-width: 900px) {
-    text-align: center;
-  }
-}
-
-.scroll {
-  display: flex;
-  align-items: center;
-  justify-content: flex-end;
-  gap: 0.8rem;
-
-  color: $white;
-  text-align: center;
-  font-family: $ReadexPro;
-  font-size: 1.2rem;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
 }

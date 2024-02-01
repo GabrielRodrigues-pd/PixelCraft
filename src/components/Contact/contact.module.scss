@@ -4,126 +4,126 @@
   position: relative;
   width: 100%;
   height: 100%;
-}
 
-.container {
-  display: flex;
-  max-width: 122.1rem;
-  margin: 6rem auto 0 auto;
-  padding: 0 2rem;
-  box-sizing: content-box;
+  .boxBg {
+    width: 70vw;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    right: -20%;
+    padding: 0;
+    z-index: -1;
 
-  justify-content: space-between;
-  align-items: center;
-  height: 60vh;
-  transition: 1s;
-
-  @media (max-width: 900px) {
-    flex-direction: column;
-    height: auto;
-    padding-bottom: 10rem;
-    gap: 10rem;
-  }
-}
-
-.boxBg {
-  width: 70vw;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  right: -20%;
-  padding: 0;
-  z-index: -1;
-}
-
-.imgStyle {
-  opacity: 0.1;
-}
-
-.flame {
-  transition: 1s;
-
-  @media (max-width: 900px) {
-    max-width: 39.8rem;
-  }
-
-  h2 {
-    color: $white;
-    font-family: $ReadexPro;
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 600;
-    line-height: 130%;
-    letter-spacing: 1.6px;
-  }
-
-  p {
-    color: $gray_300;
-    font-family: $ReadexPro;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 150%;
-    max-width: 56.8rem;
-
-    padding: 1.6rem 0 4.4rem 0;
-
-    @media (max-width: 1055px) {
-      max-width: 40rem;
+    .imgStyle {
+      opacity: 0.1;
     }
   }
-}
 
-.boxContact {
-  h3 {
-    color: $white;
-    font-family: $SpaceGro;
-    font-size: 1.8rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-}
+  .container {
+    display: flex;
+    max-width: 122.1rem;
+    margin: 6rem auto 0 auto;
+    padding: 0 2rem;
+    box-sizing: content-box;
 
-.boxEmail {
-  border-radius: 0.8rem;
-  border: 2px solid $gray_btn;
-  margin: 3.4rem 0 1.6rem 0;
-  padding: 2.2rem 0 2.2rem 3.7rem;
+    justify-content: space-between;
+    align-items: center;
+    height: 60vh;
+    transition: 1s;
 
-  display: flex;
-  align-items: flex-start;
-  gap: 1.6rem;
+    @media (max-width: 900px) {
+      flex-direction: column;
+      height: auto;
+      padding-bottom: 10rem;
+      gap: 10rem;
+    }
 
-  h4 {
-    color: $blue_100;
-    font-family: $SpaceGro;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-    letter-spacing: 0.8px;
-  }
+    .flame {
+      transition: 1s;
 
-  p {
-    color: $gray_span;
-    font-family: $SpaceGro;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    letter-spacing: 0.8px;
-    padding: 0.5rem 0 2rem 0;
-  }
+      @media (max-width: 900px) {
+        max-width: 39.8rem;
+      }
 
-  a {
-    color: $blue_700;
-    font-family: $SpaceGro;
-    font-size: 1.4rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-    letter-spacing: 0.7px;
-    text-decoration: none;
+      h2 {
+        color: $white;
+        font-family: $ReadexPro;
+        font-size: 3.2rem;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 1.6px;
+      }
+
+      p {
+        color: $gray_300;
+        font-family: $ReadexPro;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 150%;
+        max-width: 56.8rem;
+
+        padding: 1.6rem 0 4.4rem 0;
+
+        @media (max-width: 1055px) {
+          max-width: 40rem;
+        }
+      }
+    }
+
+    .boxContact {
+      h3 {
+        color: $white;
+        font-family: $SpaceGro;
+        font-size: 1.8rem;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+      }
+
+      .boxEmail {
+        border-radius: 0.8rem;
+        border: 2px solid $gray_btn;
+        margin: 3.4rem 0 1.6rem 0;
+        padding: 2.2rem 0 2.2rem 3.7rem;
+
+        display: flex;
+        align-items: flex-start;
+        gap: 1.6rem;
+
+        h4 {
+          color: $blue_100;
+          font-family: $SpaceGro;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 500;
+          line-height: normal;
+          letter-spacing: 0.8px;
+        }
+
+        p {
+          color: $gray_span;
+          font-family: $SpaceGro;
+          font-size: 1.6rem;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+          letter-spacing: 0.8px;
+          padding: 0.5rem 0 2rem 0;
+        }
+
+        a {
+          color: $blue_700;
+          font-family: $SpaceGro;
+          font-size: 1.4rem;
+          font-style: normal;
+          font-weight: 700;
+          line-height: normal;
+          letter-spacing: 0.7px;
+          text-decoration: none;
+        }
+      }
+    }
   }
 }

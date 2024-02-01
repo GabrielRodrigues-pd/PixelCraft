@@ -5,50 +5,50 @@
   flex-direction: column;
   gap: 7.4rem;
   height: 100%;
-}
 
-.header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-  @media (max-width: 1050px) {
+    @media (max-width: 1050px) {
+      flex-direction: column;
+      gap: 5rem;
+    }
+
+    h2 {
+      color: $white;
+      font-family: $SpaceGro;
+      font-size: 3.2rem;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+    }
+
+    span {
+      color: $blue_Dark_700;
+      font-family: $ReadexPro;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      text-transform: uppercase;
+    }
+
+    p {
+      color: $gray_300;
+      font-family: $ReadexPro;
+      font-size: 1.6rem;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      width: 33.4rem;
+    }
+  }
+
+  .boxCard {
+    display: flex;
     flex-direction: column;
-    gap: 5rem;
+    gap: 4rem;
   }
-
-  h2 {
-    color: $white;
-    font-family: $SpaceGro;
-    font-size: 3.2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-  }
-
-  span {
-    color: $blue_Dark_700;
-    font-family: $ReadexPro;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    text-transform: uppercase;
-  }
-
-  p {
-    color: $gray_300;
-    font-family: $ReadexPro;
-    font-size: 1.6rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    width: 33.4rem;
-  }
-}
-
-.boxCard {
-  display: flex;
-  flex-direction: column;
-  gap: 4rem;
 }
