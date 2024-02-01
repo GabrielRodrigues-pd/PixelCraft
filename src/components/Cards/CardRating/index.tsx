@@ -2,7 +2,6 @@ import React from "react";
 import Image, { StaticImageData } from "next/image";
 import styles from "./cardRating.module.scss";
 import icon from "@/assets/svg/aspas.svg";
-import Icon1 from "@/assets/png/imgIcon.png";
 interface cardPros {
   title: string;
   status: string;
@@ -30,7 +29,8 @@ export default function CardRating({
           <div className={styles.wrapper}>
             <Image
               src={imgSrc}
-              style={{ objectFit: "cover", borderRadius: "50%", width: "100%" }}
+              fill={true}
+              style={{ objectFit: "cover", borderRadius: "50%" }}
               alt=""
             />
           </div>

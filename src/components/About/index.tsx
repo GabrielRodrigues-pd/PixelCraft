@@ -9,7 +9,7 @@ import ImgG from "../../assets/png/IconGabriel.png";
 
 export default function About() {
   return (
-    <div className={styles.container}>
+    <div className={styles.container} id="sobre">
       <HeadComponent
         title="Nós somos a PixelCraft"
         subTitle="juntos, buscamos inovação e excelência"

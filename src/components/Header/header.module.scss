@@ -27,6 +27,12 @@
         line-height: normal;
         text-transform: uppercase;
         cursor: pointer;
+        padding: 1rem 2rem;
+        transition: 0.2s;
+
+        &:hover {
+          color: $blue_700;
+        }
       }
 
       li a {
