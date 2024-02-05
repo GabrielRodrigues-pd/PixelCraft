@@ -1,9 +1,11 @@
+"use client";
+
 import React from "react";
 import styles from "./cases.module.scss";
 import ButtonCasesView from "../Buttons/ButtonCasesView";
 import CardCase from "../Cards/CardCase";
 import imgCard from "@/assets/png/img-card.png";
-
+import { motion } from "framer-motion";
 export default function Cases() {
   const caseDatas = [
     {
@@ -21,7 +23,13 @@ export default function Cases() {
   ];
 
   return (
-    <div className={styles.container} id="case">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={styles.container}
+      id="case"
+    >
       <div className={styles.header}>
         <div>
           <span>Our recent Cases</span>
@@ -42,6 +50,6 @@ export default function Cases() {
           />
         ))}
       </div>
-    </div>
+    </motion.div>
   );
 }

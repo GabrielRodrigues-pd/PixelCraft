@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "./expertise.module.scss";
@@ -14,9 +16,16 @@ import react from "@/assets/technology/react.svg";
 import sass from "@/assets/technology/sass.svg";
 import wordpress from "@/assets/technology/wordpress.svg";
 
+import { motion } from "framer-motion";
+
 export default function Expertise() {
   return (
-    <div className={styles.container}>
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={styles.container}
+    >
       <h2>Our Expertise</h2>
       <div className={styles.boxCard}>
         <div className={styles.card}>
@@ -57,6 +66,6 @@ export default function Expertise() {
         <Image src={sass} alt="" />
         <Image src={wordpress} alt="" />
       </div>
-    </div>
+    </motion.div>
   );
 }

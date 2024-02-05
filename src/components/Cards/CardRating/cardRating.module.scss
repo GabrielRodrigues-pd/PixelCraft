@@ -4,7 +4,7 @@
   max-width: 37.5rem;
   padding: 6rem 3.5rem;
   border-radius: 2.4rem;
-  margin-bottom: 2rem;
+  margin: 0 auto 5.8rem auto;
   border: 2px solid $gray_btn;
   height: 44.7rem;
   display: flex;
@@ -24,8 +24,8 @@
       color: $line_grid;
     }
 
-    h3 {
-      color: $line_grid;
+    .info .innerImg .user h3 {
+      color: $blue_700;
     }
   }
 

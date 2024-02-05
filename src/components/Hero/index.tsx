@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import styles from "./hero.module.scss";
 import Image from "next/image";
@@ -5,11 +7,17 @@ import iconMouse from "@/assets/svg/mouser.svg";
 
 import iconFog from "@/assets/svg/foguete.svg";
 import ButtonProject from "../Buttons/ButtonProject";
+import { motion } from "framer-motion";
 
 export default function Hero() {
   return (
     <div className={styles.hero}>
-      <div className={styles.info}>
+      <motion.div
+        initial={{ opacity: 0, x: -100 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.info}
+      >
         <div className={styles.subtitle}>
           <Image src={iconFog} alt="" />
           <p>Incredible design, innovative strategies, success</p>
@@ -25,8 +33,13 @@ export default function Hero() {
           combinação única de criatividade e expertise.
         </p>
         <ButtonProject title="Iniciar um projeto" />
-      </div>
-      <div className={styles.number}>
+      </motion.div>
+      <motion.div
+        initial={{ opacity: 0, x: 200 }}
+        whileInView={{ opacity: 1, x: 0 }}
+        transition={{ duration: 0.5 }}
+        className={styles.number}
+      >
         <p className={styles.title}>Nossos números</p>
         <div className={styles.boxInfo}>
           <h3>
@@ -56,7 +69,7 @@ export default function Hero() {
           <p>Scroll Down</p>
           <Image src={iconMouse} alt="" />
         </div>
-      </div>
+      </motion.div>
     </div>
   );
 }

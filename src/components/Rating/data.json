@@ -1,0 +1,50 @@
+[
+  {
+    "id": 1,
+    "title": "UI Design & WebSite",
+    "disc": "“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”",
+    "name": "Max Silva",
+    "status": "Clínica Odontológica",
+    "imgSrc": "/src/assets/png/imgIcon.png"
+  },
+  {
+    "id": 2,
+    "title": "UI Design App e Site",
+    "disc": "“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes Recomendo sem hesitação, excelente trabalho!”",
+    "name": "Jonh Silva",
+    "status": "Logística Logic",
+    "imgSrc": "/src/assets/png/imgIcon.png"
+  },
+  {
+    "id": 3,
+    "title": "UI Design App e Site",
+    "disc": "“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes Recomendo sem hesitação, excelente trabalho!”",
+    "name": "Jonh Silva",
+    "status": "Logística Logic",
+    "imgSrc": "/src/assets/png/imgIcon.png"
+  },
+  {
+    "id": 4,
+    "title": "UI Design App e Site",
+    "disc": "“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes Recomendo sem hesitação, excelente trabalho!”",
+    "name": "Jonh Silva",
+    "status": "Logística Logic",
+    "imgSrc": "/src/assets/png/imgIcon.png"
+  },
+  {
+    "id": 5,
+    "title": "UI Design App e Site",
+    "disc": "“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes Recomendo sem hesitação, excelente trabalho!”",
+    "name": "Jonh Silva",
+    "status": "Logística Logic",
+    "imgSrc": "/src/assets/png/imgIcon.png"
+  },
+  {
+    "id": 6,
+    "title": "UI Design App e Site",
+    "disc": "“A atenção aos detalhes e o profissionalismo demonstrado foram impressionantes Recomendo sem hesitação, excelente trabalho!”",
+    "name": "Jonh Silva",
+    "status": "Logística Logic",
+    "imgSrc": "/src/assets/png/imgIcon.png"
+  }
+]

@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "./about.module.scss";
@@ -6,10 +8,17 @@ import CardDeveloper from "../Cards/CardDeveloper";
 
 import ImgD from "../../assets/png/IconDiogo.png";
 import ImgG from "../../assets/png/IconGabriel.png";
+import { motion } from "framer-motion";
 
 export default function About() {
   return (
-    <div className={styles.container} id="sobre">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={styles.container}
+      id="sobre"
+    >
       <HeadComponent
         title="Nós somos a PixelCraft"
         subTitle="juntos, buscamos inovação e excelência"
@@ -35,6 +44,6 @@ export default function About() {
           brand={true}
         />
       </div>
-    </div>
+    </motion.div>
   );
 }

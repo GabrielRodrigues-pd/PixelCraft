@@ -1,3 +1,5 @@
+"use client";
+
 import React from "react";
 import Image from "next/image";
 import styles from "./process.module.scss";
@@ -5,7 +7,7 @@ import HeadComponent from "../HeadComponent";
 import CardProcess from "../Cards/CardProcess";
 
 import seta from "@/assets/svg/setaWhite.svg";
-
+import { motion } from "framer-motion";
 export default function Process() {
   const cardDatas = [
     {
@@ -49,7 +51,13 @@ export default function Process() {
   ];
 
   return (
-    <div className={styles.container} id="skills">
+    <motion.div
+      initial={{ opacity: 0, y: -100 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.5 }}
+      className={styles.container}
+      id="skills"
+    >
       <HeadComponent
         title="Creative Process"
         subTitle="conheça nosso processo criativo"
@@ -74,6 +82,6 @@ export default function Process() {
           <Image src={seta} alt="" />
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 }

@@ -8,11 +8,13 @@ import Image, { StaticImageData } from "next/image";
 import Icon1 from "@/assets/png/imgIcon.png";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
-
 import "swiper/css";
+import { SwiperProps } from "./SwiperProps";
+import icon from "@/assets/svg/aspas.svg";
 
-export default function Slider() {
+const Slider: React.FC<SwiperProps> = ({ slides }) => {
   const [slidePerView, setSlidePerView] = useState(3);
+  console.log(slides);
 
   useEffect(() => {
     function handleResize() {
@@ -42,90 +44,44 @@ export default function Slider() {
         modules={[Navigation, Pagination, Scrollbar, A11y]}
         spaceBetween={46}
         slidesPerView={slidePerView}
-        navigation
-        pagination={{ clickable: true }}
+        navigation={true}
+        pagination={{ dynamicBullets: true }}
         scrollbar={{ draggable: true }}
+        className={styles.slider}
         // onSwiper={}
         // onSlideChange={() => }
       >
-        <SwiperSlide>
-          <CardRating
-            title="Card 0"
-            status="Clínica Odontológica"
-            name="Max Silva"
-            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-            imgSrc={Icon1}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRating
-            title="Card 1"
-            status="Clínica Odontológica"
-            name="Max Silva"
-            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-            imgSrc={Icon1}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRating
-            title="Card 2"
-            status="Clínica Odontológica"
-            name="Max Silva"
-            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-            imgSrc={Icon1}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRating
-            title="Card 3"
-            status="Clínica Odontológica"
-            name="Max Silva"
-            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-            imgSrc={Icon1}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRating
-            title="Card 3"
-            status="Clínica Odontológica"
-            name="Max Silva"
-            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-            imgSrc={Icon1}
-          />
-        </SwiperSlide>
-        <SwiperSlide>
-          <CardRating
-            title="Card 3"
-            status="Clínica Odontológica"
-            name="Max Silva"
-            disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-            imgSrc={Icon1}
-          />
-        </SwiperSlide>
-        {/* <div className={`${styles.container}`}>
-        <CardRating
-          title="UI Design & WebSite"
-          status="Clínica Odontológica"
-          name="Max Silva"
-          disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-          imgSrc={Icon1}
-        />
-        <CardRating
-          title="UI Design & WebSite"
-          status="Clínica Odontológica"
-          name="Max Silva"
-          disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-          imgSrc={Icon1}
-        />
-        <CardRating
-          title="UI Design & WebSite"
-          status="Clínica Odontológica"
-          name="Max Silva"
-          disc="“O PixelCraft não apenas criou um site incrível, mastambém forneceram um suporte excepcional aolongo do processo.”"
-          imgSrc={Icon1}
-        />
-      </div> */}
+        {slides.map((slide) => (
+          <SwiperSlide key={slide.id}>
+            <div className={styles.containerr}>
+              <div>
+                <h2>{slide.title}</h2>
+                <p>{slide.disc}</p>
+              </div>
+
+              <div className={styles.info}>
+                <div className={styles.innerImg}>
+                  <div className={styles.wrapper}>
+                    <Image
+                      src={Icon1}
+                      fill={true}
+                      style={{ objectFit: "cover", borderRadius: "50%" }}
+                      alt=""
+                    />
+                  </div>
+                  <div className={styles.user}>
+                    <h3>{slide.name}</h3>
+                    <span>{slide.status}</span>
+                  </div>
+                </div>
+                <Image src={icon} alt="" />
+              </div>
+            </div>
+          </SwiperSlide>
+        ))}
       </Swiper>
     </div>
   );
-}
+};
+
+export default Slider;
