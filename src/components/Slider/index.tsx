@@ -14,7 +14,6 @@ import icon from "@/assets/svg/aspas.svg";
 
 const Slider: React.FC<SwiperProps> = ({ slides }) => {
   const [slidePerView, setSlidePerView] = useState(3);
-  console.log(slides);
 
   useEffect(() => {
     function handleResize() {
@@ -53,7 +52,7 @@ const Slider: React.FC<SwiperProps> = ({ slides }) => {
       >
         {slides.map((slide) => (
           <SwiperSlide key={slide.id}>
-            <div className={styles.containerr}>
+            <div className={styles.box}>
               <div>
                 <h2>{slide.title}</h2>
                 <p>{slide.disc}</p>

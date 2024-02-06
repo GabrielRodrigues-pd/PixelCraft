@@ -18,6 +18,15 @@ export default function BgHero({ children }: { children: ReactNode }) {
           zIndex: "-99",
         }}
       />
+      <div className={styles.grid}>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
       {children}
     </div>
   );

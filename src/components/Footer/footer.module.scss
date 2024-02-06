@@ -23,6 +23,11 @@
     font-style: normal;
     font-weight: 700;
     line-height: normal;
+    transition: 0.2s;
+
+    &:hover {
+      color: $blue_700;
+    }
   }
 
   span {
