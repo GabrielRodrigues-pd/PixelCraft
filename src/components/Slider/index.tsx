@@ -6,7 +6,7 @@ import styles from "./slider.module.scss";
 import CardRating from "../Cards/CardRating";
 import Image, { StaticImageData } from "next/image";
 import Icon1 from "@/assets/png/imgIcon.png";
-import { Navigation, Pagination, Scrollbar, A11y } from "swiper/modules";
+import { Navigation, Pagination, Scrollbar, A11y, Autoplay } from "swiper/modules";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import { SwiperProps } from "./SwiperProps";
@@ -40,13 +40,17 @@ const Slider: React.FC<SwiperProps> = ({ slides }) => {
   return (
     <div className={styles.container}>
       <Swiper
-        modules={[Navigation, Pagination, Scrollbar, A11y]}
+        modules={[Navigation, Pagination, Scrollbar, A11y, Autoplay]}
         spaceBetween={46}
         slidesPerView={slidePerView}
-        navigation={true}
+        //navigation={true}
         pagination={{ dynamicBullets: true }}
         scrollbar={{ draggable: true }}
         className={styles.slider}
+        autoplay={{
+          delay: 2500,
+          disableOnInteraction: false,
+        }}
         // onSwiper={}
         // onSlideChange={() => }
       >
