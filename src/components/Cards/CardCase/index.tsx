@@ -21,7 +21,7 @@ export default function CardCase({ title, description, image }: CardProps) {
             objectFit: "cover",
           }}
           alt=""
-          quality={100}
+          quality={80}
         />
       </div>
       <div className={styles.card}>

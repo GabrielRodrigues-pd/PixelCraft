@@ -5,19 +5,25 @@
   justify-content: space-between;
   margin: 0 auto;
   max-width: 122.1rem;
-  padding: 12rem 2rem 25rem 0;
+  padding: 12rem 2rem 25rem 2rem;
   box-sizing: content-box;
 
   @media (max-width: 900px) {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 10rem;
   }
 
   .info {
+    max-width: 62.2rem;
+
+    @media (max-width: 500px) {
+      width: 30rem;
+    }
+
     h1 {
       color: $white;
-
       font-family: $ReadexPro;
       font-size: 7.2rem;
       font-style: normal;
@@ -28,6 +34,13 @@
 
       @media (max-width: 700px) {
         font-size: 5.2rem;
+      }
+      @media (max-width: 500px) {
+        font-size: 4.2rem;
+      }
+
+      @media (max-width: 400px) {
+        font-size: 3.2rem;
       }
     }
 
@@ -46,10 +59,17 @@
       line-height: normal;
       display: flex;
       gap: 1.6rem;
+
+      @media (max-width: 500px) {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 2.4rem;
+      }
     }
 
     .ponto {
       color: $blue_700;
+      width: 100%;
     }
 
     .disc {
@@ -68,6 +88,7 @@
     display: flex;
     flex-direction: column;
     gap: 4.2rem;
+    max-width: 16.7rem;
 
     @media (max-width: 900px) {
       padding-top: 15rem;
@@ -98,7 +119,6 @@
     }
 
     .boxInfo {
-      width: 16.3rem;
       display: flex;
       flex-direction: column;
       align-items: flex-end;

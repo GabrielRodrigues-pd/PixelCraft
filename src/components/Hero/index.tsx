@@ -13,8 +13,8 @@ export default function Hero() {
   return (
     <div className={styles.hero}>
       <motion.div
-        initial={{ opacity: 0, x: -100 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className={styles.info}
       >
@@ -23,10 +23,9 @@ export default function Hero() {
           <p>Incredible design, innovative strategies, success</p>
         </div>
         <h1>
-          Design<span className={styles.ponto}>.</span> <br />
-          Development<span className={styles.ponto}>.</span>
-          <br />
-          knowledge<span className={styles.ponto}>.</span>
+          Design<span className={styles.ponto}>.</span> Development
+          <span className={styles.ponto}>.</span> knowledge
+          <span className={styles.ponto}>.</span>
         </h1>
         <p className={styles.disc}>
           Potencializamos o sucesso online dos nossos clientes por meio de uma
@@ -35,8 +34,8 @@ export default function Hero() {
         <ButtonProject title="Iniciar um projeto" />
       </motion.div>
       <motion.div
-        initial={{ opacity: 0, x: 200 }}
-        whileInView={{ opacity: 1, x: 0 }}
+        initial={{ opacity: 0 }}
+        whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5 }}
         className={styles.number}
       >

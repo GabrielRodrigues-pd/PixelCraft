@@ -15,6 +15,12 @@
   cursor: pointer;
   transition: 0.2s;
 
+  @media (max-width: 450px) {
+    width: 100%;
+    // justify-content: space-between;
+    justify-content: center;
+  }
+
   &:hover {
     border-color: $blue_700;
     color: $blue_700;
