@@ -11,6 +11,11 @@
     align-items: center;
     gap: 0.8rem;
     padding-bottom: 1rem;
+
+    @media (max-width: 500px) {
+      text-align: center;
+      flex-direction: column;
+    }
   }
 
   h2 {

@@ -57,13 +57,20 @@ export default function CardDeveloper({
       <div className={styles.boxWrap}>
         {logo ? (
           <div className={styles.x}>
-            <Image src={iconX} alt="" />
+            <Image width={26} height={26} src={iconX} alt="" />
           </div>
         ) : (
           <></>
         )}
 
-        <Image src={imgDev} quality={100} alt={altImgDev} />
+        <Image
+          src={imgDev}
+          width={396}
+          height={505}
+          quality={100}
+          priority
+          alt={altImgDev}
+        />
       </div>
 
       <div className={styles.infoCard}>
@@ -80,16 +87,21 @@ export default function CardDeveloper({
 
         <div className={styles.icon}>
           <a href={linkInsta} target="_blank">
-            <Image src={insta} alt="Ícone do instagram" />
+            <Image
+              src={insta}
+              width={19}
+              height={19}
+              alt="Ícone do instagram"
+            />
           </a>
           <a href={linkGithub} target="_blank">
-            <Image src={github} alt="Ícone do GitHub" />
+            <Image src={github} width={19} height={19} alt="Ícone do GitHub" />
           </a>
           <a href={linkBehance} target="_blank">
-            <Image src={beh} alt="Ícone do Behance" />
+            <Image src={beh} width={19} height={19} alt="Ícone do Behance" />
           </a>
           <a href={linkDribble} target="_blank">
-            <Image src={dribb} alt="Ícone do Dribble" />
+            <Image src={dribb} width={19} height={19} alt="Ícone do Dribble" />
           </a>
         </div>
       </div>

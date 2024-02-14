@@ -12,7 +12,7 @@ export default function HeadComponent({ title, subTitle }: HeadProps) {
   return (
     <div className={styles.head}>
       <div>
-        <Image src={star} alt="" />
+        <Image src={star} width={20} height={20} alt="" />
         <p>{subTitle}</p>
       </div>
 
