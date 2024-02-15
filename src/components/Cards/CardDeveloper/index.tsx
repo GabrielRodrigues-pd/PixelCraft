@@ -67,8 +67,11 @@ export default function CardDeveloper({
           src={imgDev}
           width={396}
           height={505}
-          quality={100}
+          quality={80}
           priority
+          style={{
+            objectFit: "cover",
+          }}
           alt={altImgDev}
         />
       </div>
