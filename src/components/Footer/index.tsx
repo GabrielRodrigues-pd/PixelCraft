@@ -9,7 +9,7 @@ import BackToTopButton from "../Buttons/BackToTopButton";
 
 export default function Footer() {
   return (
-    <div className={styles.container}>
+    <footer className={styles.container}>
       <Image src={logoPixel} alt="" />
       <span>PixelCraft | Todos os direitos reservados</span>
       <div>
@@ -25,6 +25,6 @@ export default function Footer() {
         </a>
       </div>
       <BackToTopButton />
-    </div>
+    </footer>
   );
 }

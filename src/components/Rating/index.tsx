@@ -10,7 +10,7 @@ import { motion } from "framer-motion";
 
 export default function Rating() {
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: -100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -21,6 +21,6 @@ export default function Rating() {
         subTitle="o motivo do nosso sucesso"
       />
       <Slider slides={dados} />
-    </motion.div>
+    </motion.section>
   );
 }

@@ -51,7 +51,7 @@ export default function Process() {
   ];
 
   return (
-    <motion.div
+    <motion.section
       initial={{ opacity: 0, y: -100 }}
       whileInView={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.5 }}
@@ -82,6 +82,6 @@ export default function Process() {
           <Image src={seta} alt="" />
         </div>
       </div>
-    </motion.div>
+    </motion.section>
   );
 }
